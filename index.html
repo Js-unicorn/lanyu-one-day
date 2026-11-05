@@ -37,12 +37,13 @@ section{padding:72px 0}
 .nav.solid{background:rgba(255,255,255,.96);color:var(--ink);box-shadow:0 1px 0 var(--line)}
 .brand{display:flex;align-items:center;gap:8px;color:inherit;text-decoration:none;font-family:var(--serif);font-weight:900;font-size:1.05rem;white-space:nowrap}
 .eye{width:20px;height:20px;border-radius:50%;flex:none;background:radial-gradient(circle,#000 0 4px,#fff 4px 6.5px,var(--red) 6.5px)}
-.nav ul{list-style:none;margin:0 0 0 auto;padding:0;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;
+.nav nav{flex:1;min-width:0}
+.nav ul{list-style:none;margin:0;padding:0 24px 0 0;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;touch-action:pan-x;overscroll-behavior-x:contain;
   -webkit-mask-image:linear-gradient(to right,#000 85%,transparent);mask-image:linear-gradient(to right,#000 85%,transparent)}
 .nav ul::-webkit-scrollbar{display:none}
 .nav a.link{display:block;padding:6px 10px;border-radius:999px;color:inherit;text-decoration:none;font-size:.92rem;white-space:nowrap}
 .nav a.link.active{background:var(--red);color:#fff}
-@media (min-width:860px){.nav{padding:0 32px}.nav ul{-webkit-mask-image:none;mask-image:none;gap:8px}}
+@media (min-width:860px){.nav{padding:0 32px}.nav ul{-webkit-mask-image:none;mask-image:none;gap:8px;justify-content:flex-end;padding-right:0}}
 
 /* hero */
 .hero{position:relative;min-height:100svh;min-height:100vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;padding:0}
@@ -510,7 +511,9 @@ footer a{color:#fff}
   <div class="band on-dark" aria-hidden="true"></div>
   <div class="wrap">
     <h2>蘭嶼一日遊</h2>
-    <a href="#top">回到頁首</a></p>
+    <p>最好的旅程，是當我們離開時，這片沙灘比我們來時更乾淨。</p>
+    <p>內容改編自企劃「「嶼」你同行，蘭嶼永續圓舞曲」。照片取自原企劃書與簡報（原資料註明來源包含維基百科、臺東縣政府觀光旅遊網等）；美食照片取自網路，版權屬原拍攝者；交通班表參考德安航空與飛魚船票網（2026 年 11 月查詢）。</p>
+    <p>行動商務應用課程作業　<a href="#top">回到頁首</a></p>
   </div>
 </footer>
 
